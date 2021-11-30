@@ -4,14 +4,79 @@
 import PackageDescription
 
 let package = Package(
-  name: "spm",
+  name: "BanubaVideoEditor",
   platforms: [
-      .iOS(.v11)
-    ],
+    .iOS(.v11)
+  ],
   products: [
     .library(
-      name: "spm",
-      targets: ["spm"]),
+      name: "BanubaMusicEditorSDKPackage",
+      targets: ["BanubaMusicEditorSDKPackage"]),
+    
+      .library(
+        name: "BanubaVideoEditorSDKPackage",
+        targets: ["BanubaVideoEditorSDKPackage"]),
+    
+      .library(
+        name: "BanubaOverlayEditorSDKPackage",
+        targets: ["BanubaOverlayEditorSDKPackage"]),
+    
+      .library(
+        name: "BanubaSDKSimplePackage",
+        targets: ["BanubaSDKSimplePackage"]),
+    
+      .library(
+        name: "BanubaSDKServicingPackage",
+        targets: ["BanubaSDKServicingPackage"]),
+    
+      .library(
+        name: "VideoEditorPackage",
+        targets: ["VideoEditorPackage"]),
+    
+      .library(
+        name: "BanubaUtilitiesPackage",
+        targets: ["BanubaUtilitiesPackage"]),
+    
+      .library(
+        name: "BanubaVideoEditorEffectsSDKPackage",
+        targets: ["BanubaVideoEditorEffectsSDKPackage"]),
+    
+      .library(
+        name: "BanubaLicenseServicingSDKPackage",
+        targets: ["BanubaLicenseServicingSDKPackage"]),
+    
+      .library(
+        name: "BanubaTokenStorageSDKPackage",
+        targets: ["BanubaTokenStorageSDKPackage"]),
+    
+      .library(
+        name: "BNBLicenseUtilsPackage",
+        targets: ["BNBLicenseUtilsPackage"]),
+    
+      .library(
+        name: "BanubaARCloudSDKPackage",
+        targets: ["BanubaARCloudSDKPackage"]),
+    
+      .library(
+        name: "BanubaAudioBrowserSDKPackage",
+        targets: ["BanubaAudioBrowserSDKPackage"]),
+    
+      .library(
+        name: "BanubaVideoEditorGallerySDKPackage",
+        targets: ["BanubaVideoEditorGallerySDKPackage"]),
+    
+      .library(
+        name: "BanubaEffectPlayerPackage",
+        targets: ["BanubaEffectPlayerPackage"]),
+    
+      .library(
+        name: "BanubaSDKPackage",
+        targets: ["BanubaSDKPackage"]),
+    
+      .library(
+        name: "BanubaVideoEditorTrimSDKPackage",
+        targets: ["BanubaVideoEditorTrimSDKPackage"]),
+    
   ],
   dependencies: [
     .package(url: "https://github.com/Banuba/BanubaVideoEditorEffectsSDK-iOS.git", from: "1.19.0"),
@@ -23,23 +88,120 @@ let package = Package(
     .package(url: "https://github.com/Banuba/BanubaUtilities-iOS.git", from: "1.19.0"),
     .package(url: "https://github.com/Banuba/BNBLicenseUtils-iOS.git", from: "1.19.0"),
     .package(url: "https://github.com/Banuba/VideoEditor-iOS.git", from: "1.19.0"),
+    .package(url: "https://github.com/Banuba/BanubaSDK-iOS.git", from: "1.19.0"),
+    .package(url: "https://github.com/Banuba/BanubaSDKSimple-IOS.git", from: "1.19.0"),
+    .package(url: "https://github.com/Banuba/BanubaARCloudSDK-IOS.git", from: "1.19.0"),
+    .package(url: "https://github.com/Banuba/BanubaEffectPlayer-iOS.git", from: "1.19.0"),
+    .package(url: "https://github.com/Banuba/BanubaAudioBrowserSDK-iOS.git", from: "1.19.0"),
+    .package(url: "https://github.com/Banuba/BanubaTokenStorageSDK-iOS.git", from: "1.19.0"),
+    .package(url: "https://github.com/Banuba/BanubaVideoEditorGallerySDK.git", from: "1.19.0"),
+    .package(url: "https://github.com/Banuba/BanubaVideoEditorTrimSDK-iOS.git", from: "1.19.0"),
   ],
   targets: [
     .target(
-      name: "spm",
+      name: "BanubaMusicEditorSDKPackage",
       dependencies: [
-        .product(name: "BanubaVideoEditorEffectsSDK", package: "BanubaVideoEditorEffectsSDK-iOS"),
-        .product(name: "BanubaOverlayEditorSDK", package: "BanubaOverlayEditorSDK-iOS"),
-        .product(name: "BanubaLicenseServicingSDK", package: "BanubaLicenseServicingSDK"),
-        .product(name: "BanubaVideoEditorSDK", package: "BanubaVideoEditorSDK-iOS"),
         .product(name: "BanubaMusicEditorSDK", package: "BanubaMusicEditorSDK-iOS"),
-        .product(name: "BanubaSDKServicing", package: "BanubaSDKServicing-iOS"),
-        .product(name: "BanubaUtilities", package: "BanubaUtilities-iOS"),
-        .product(name: "BNBLicenseUtils", package: "BNBLicenseUtils-iOS"),
-        .product(name: "VideoEditor", package: "VideoEditor-iOS")
       ]),
-    .testTarget(
-      name: "spmTests",
-      dependencies: ["spm"]),
+    
+      .target(
+        name: "BanubaVideoEditorSDKPackage",
+        dependencies: [
+          .product(name: "BanubaVideoEditorSDK", package: "BanubaVideoEditorSDK-iOS"),
+        ]),
+    
+      .target(
+        name: "BanubaOverlayEditorSDKPackage",
+        dependencies: [
+          .product(name: "BanubaOverlayEditorSDK", package: "BanubaOverlayEditorSDK-iOS"),
+        ]),
+    
+      .target(
+        name: "BanubaSDKServicingPackage",
+        dependencies: [
+          .product(name: "BanubaSDKServicing", package: "BanubaSDKServicing-iOS"),
+        ]),
+    
+      .target(
+        name: "VideoEditorPackage",
+        dependencies: [
+          .product(name: "VideoEditor", package: "VideoEditor-iOS")
+        ]),
+    
+      .target(
+        name: "BanubaUtilitiesPackage",
+        dependencies: [
+          .product(name: "BanubaUtilities", package: "BanubaUtilities-iOS"),
+        ]),
+    
+      .target(
+        name: "BanubaVideoEditorEffectsSDKPackage",
+        dependencies: [
+          .product(name: "BanubaVideoEditorEffectsSDK", package: "BanubaVideoEditorEffectsSDK-iOS"),
+        ]),
+    
+      .target(
+        name: "BanubaLicenseServicingSDKPackage",
+        dependencies: [
+          .product(name: "BanubaLicenseServicingSDK", package: "BanubaLicenseServicingSDK"),
+        ]),
+    
+      .target(
+        name: "BanubaTokenStorageSDKPackage",
+        dependencies: [
+          .product(name: "BanubaTokenStorageSDK", package: "BanubaTokenStorageSDK-iOS"),
+        ]),
+    
+      .target(
+        name: "BNBLicenseUtilsPackage",
+        dependencies: [
+          .product(name: "BNBLicenseUtils", package: "BNBLicenseUtils-iOS"),
+        ]),
+    
+      .target(
+        name: "BanubaARCloudSDKPackage",
+        dependencies: [
+          .product(name: "BanubaARCloudSDK", package: "BanubaARCloudSDK-IOS"),
+        ]),
+    
+      .target(
+        name: "BanubaAudioBrowserSDKPackage",
+        dependencies: [
+          .product(name: "BanubaAudioBrowserSDK", package: "BanubaAudioBrowserSDK-iOS"),
+        ]),
+    
+      .target(
+        name: "BanubaVideoEditorGallerySDKPackage",
+        dependencies: [
+          .product(name: "BanubaVideoEditorGallerySDK", package: "BanubaVideoEditorGallerySDK"),
+        ]),
+    
+      .target(
+        name: "BanubaEffectPlayerPackage",
+        dependencies: [
+          .product(name: "BanubaEffectPlayer", package: "BanubaEffectPlayer-iOS"),
+        ]),
+    
+      .target(
+        name: "BanubaSDKPackage",
+        dependencies: [
+          .product(name: "BanubaSdk", package: "BanubaSDK-iOS"),
+        ]),
+    
+      .target(
+        name: "BanubaVideoEditorTrimSDKPackage",
+        dependencies: [
+          .product(name: "BanubaVideoEditorTrimSDK", package: "BanubaVideoEditorTrimSDK-iOS"),
+        ]),
+    
+      .testTarget(
+        name: "spmTests",
+        dependencies: ["BanubaMusicEditorSDKPackage"]),
+    
+      .target(
+        name: "BanubaSDKSimplePackage",
+        dependencies: [
+          .product(name: "BanubaSdkSimple", package: "BanubaSDKSimple-IOS"),
+        ]),
   ]
 )
