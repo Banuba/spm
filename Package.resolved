@@ -33,8 +33,8 @@
         "repositoryURL": "https://github.com/Banuba/BanubaLicenseServicingSDK.git",
         "state": {
           "branch": null,
-          "revision": "e9930f97479bbb3cc5d629682e31650c6c87abbd",
-          "version": "1.20.1"
+          "revision": "47b907a6ea5b14f0885b689738bc253671620978",
+          "version": "1.20.2"
         }
       },
       {
@@ -123,8 +123,8 @@
         "repositoryURL": "https://github.com/Banuba/BanubaVideoEditorSDK-iOS.git",
         "state": {
           "branch": null,
-          "revision": "cca461d1165c2adf7e4d942b96151203d9628886",
-          "version": "1.20.1"
+          "revision": "f3a9b642679da5871d8a993c62e72be947b35c6b",
+          "version": "1.20.2"
         }
       },
       {

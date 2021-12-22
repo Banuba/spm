@@ -81,8 +81,8 @@ let package = Package(
   dependencies: [
     .package(url: "https://github.com/Banuba/BanubaVideoEditorEffectsSDK-iOS.git", .exact("1.20.1")),
     .package(url: "https://github.com/Banuba/BanubaOverlayEditorSDK-iOS.git", .exact("1.20.1")),
-    .package(url: "https://github.com/Banuba/BanubaLicenseServicingSDK.git", .exact("1.20.1")),
-    .package(url: "https://github.com/Banuba/BanubaVideoEditorSDK-iOS.git", .exact("1.20.1")),
+    .package(url: "https://github.com/Banuba/BanubaLicenseServicingSDK.git", .exact("1.20.2")),
+    .package(url: "https://github.com/Banuba/BanubaVideoEditorSDK-iOS.git", .exact("1.20.2")),
     .package(url: "https://github.com/Banuba/BanubaMusicEditorSDK-iOS.git", .exact("1.20.1")),
     .package(url: "https://github.com/Banuba/BanubaSDKServicing-iOS.git", .exact("1.20.1")),
     .package(url: "https://github.com/Banuba/BanubaUtilities-iOS.git", .exact("1.20.1")),
