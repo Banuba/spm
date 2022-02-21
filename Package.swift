@@ -77,6 +77,10 @@ let package = Package(
         name: "BanubaVideoEditorTrimSDKPackage",
         targets: ["BanubaVideoEditorTrimSDKPackage"]),
     
+      .library(
+        name: "VEPlaybackSDKPackage",
+        targets: ["VEPlaybackSDKPackage"]),
+    
   ],
   dependencies: [
     .package(url: "https://github.com/Banuba/BanubaVideoEditorEffectsSDK-iOS.git", .exact("1.21.0")),
@@ -95,7 +99,8 @@ let package = Package(
     .package(url: "https://github.com/Banuba/BanubaAudioBrowserSDK-iOS.git", .exact("1.21.0")),
     .package(url: "https://github.com/Banuba/BanubaTokenStorageSDK-iOS.git", .exact("1.21.0")),
     .package(url: "https://github.com/Banuba/BanubaVideoEditorGallerySDK.git", .exact("1.21.0")),
-    .package(url: "https://github.com/Banuba/BanubaVideoEditorTrimSDK-iOS.git", .exact("1.21.0"))
+    .package(url: "https://github.com/Banuba/BanubaVideoEditorTrimSDK-iOS.git", .exact("1.21.0")),
+    .package(url: "https://github.com/Banuba/VEPlaybackSDK-iOS.git", .exact("1.21.0"))
   ],
   targets: [
     .target(
@@ -202,6 +207,12 @@ let package = Package(
         name: "BanubaSDKSimplePackage",
         dependencies: [
           .product(name: "BanubaSdkSimple", package: "BanubaSDKSimple-IOS"),
+        ]),
+    
+      .target(
+        name: "VEPlaybackSDKPackage",
+        dependencies: [
+          .product(name: "VEPlaybackSDK", package: "VEPlaybackSDK-IOS"),
         ]),
   ]
 )

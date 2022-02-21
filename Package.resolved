@@ -6,7 +6,7 @@
         "repositoryURL": "https://github.com/Banuba/BanubaARCloudSDK-IOS.git",
         "state": {
           "branch": null,
-          "revision": "82125a80d9479dca2574e3df6a363b2f5e1c3490",
+          "revision": "022c95f33e3787e126af235c6ddade648ba98b9d",
           "version": "1.21.0"
         }
       },
@@ -15,7 +15,7 @@
         "repositoryURL": "https://github.com/Banuba/BanubaAudioBrowserSDK-iOS.git",
         "state": {
           "branch": null,
-          "revision": "d932df50353cde5c931d225f08d6995a75fff03c",
+          "revision": "9fa4eeb32ab588342585d37b82398997cb114086",
           "version": "1.21.0"
         }
       },
@@ -33,7 +33,7 @@
         "repositoryURL": "https://github.com/Banuba/BanubaLicenseServicingSDK.git",
         "state": {
           "branch": null,
-          "revision": "c65b24edda1f63785b03c58baf627afdad80b934",
+          "revision": "59e036fb92f5876a740c541192e23a8469c281ba",
           "version": "1.21.0"
         }
       },
@@ -42,7 +42,7 @@
         "repositoryURL": "https://github.com/Banuba/BanubaMusicEditorSDK-iOS.git",
         "state": {
           "branch": null,
-          "revision": "779d5aa6e450204797be6b689ae6dea367f3813d",
+          "revision": "bcecea7a6a7cdc2a74ce2df5e71c6337e00f4a79",
           "version": "1.21.0"
         }
       },
@@ -51,7 +51,7 @@
         "repositoryURL": "https://github.com/Banuba/BanubaOverlayEditorSDK-iOS.git",
         "state": {
           "branch": null,
-          "revision": "550ef34f7b9ee4a30791e3f28bea5c681cfe6b54",
+          "revision": "8679c307eb7d46ae10d61bd8b7757d0bd4c8b41b",
           "version": "1.21.0"
         }
       },
@@ -60,7 +60,7 @@
         "repositoryURL": "https://github.com/Banuba/BanubaSDK-iOS.git",
         "state": {
           "branch": null,
-          "revision": "e21750350eb560657082d65f1a8b87d0ab05e535",
+          "revision": "e15ca34b0c492f6caef114a66a95f40150863cde",
           "version": "1.21.0"
         }
       },
@@ -69,7 +69,7 @@
         "repositoryURL": "https://github.com/Banuba/BanubaSDKServicing-iOS.git",
         "state": {
           "branch": null,
-          "revision": "e94e31b093e5f2278ca9cb989a1a11583e9463bf",
+          "revision": "06253aa5401c5ab1897a9cd99d9bdbd810a0b847",
           "version": "1.21.0"
         }
       },
@@ -78,7 +78,7 @@
         "repositoryURL": "https://github.com/Banuba/BanubaSDKSimple-IOS.git",
         "state": {
           "branch": null,
-          "revision": "599955e240ea20cd77c2abffda59247bb953c17a",
+          "revision": "911794138990ea5fe4f31abee5bf2ef2fa3c4107",
           "version": "1.21.0"
         }
       },
@@ -87,7 +87,7 @@
         "repositoryURL": "https://github.com/Banuba/BanubaTokenStorageSDK-iOS.git",
         "state": {
           "branch": null,
-          "revision": "7539662cdfc6e1c5c9af8bd7f59398d74a331ff1",
+          "revision": "d873db8161a972f3710b7b404e647710f8d1eada",
           "version": "1.21.0"
         }
       },
@@ -96,7 +96,7 @@
         "repositoryURL": "https://github.com/Banuba/BanubaUtilities-iOS.git",
         "state": {
           "branch": null,
-          "revision": "a403607091aacfdaa4dfb7a97a3ecc03a41fd065",
+          "revision": "1e1320cd965ee1e24a52ead1b43fcf85201d6ae5",
           "version": "1.21.0"
         }
       },
@@ -105,7 +105,7 @@
         "repositoryURL": "https://github.com/Banuba/BanubaVideoEditorEffectsSDK-iOS.git",
         "state": {
           "branch": null,
-          "revision": "7399ae17a1f3132ca4363d668b250701df74a4f8",
+          "revision": "80b7a760e195f52d7cedd91db23ebf31927c3106",
           "version": "1.21.0"
         }
       },
@@ -114,7 +114,7 @@
         "repositoryURL": "https://github.com/Banuba/BanubaVideoEditorGallerySDK.git",
         "state": {
           "branch": null,
-          "revision": "70a25f58b6c032c2cf7a9ad483c79b81537e3328",
+          "revision": "b115b10802945a646ded7c91905a98ff83161926",
           "version": "1.21.0"
         }
       },
@@ -123,7 +123,7 @@
         "repositoryURL": "https://github.com/Banuba/BanubaVideoEditorSDK-iOS.git",
         "state": {
           "branch": null,
-          "revision": "9f751e84084ee6d229d8e2fbc4b738fa4f225565",
+          "revision": "d7110b7ec43f2da06066a98e25ccf6b0b31b3287",
           "version": "1.21.0"
         }
       },
@@ -132,7 +132,7 @@
         "repositoryURL": "https://github.com/Banuba/BanubaVideoEditorTrimSDK-iOS.git",
         "state": {
           "branch": null,
-          "revision": "71d66bb39fd14f8575f685bbeddd2cf1fa5ba4f9",
+          "revision": "6e630253fababf0780dc91a997d1efdc9f2d87d0",
           "version": "1.21.0"
         }
       },
@@ -146,11 +146,20 @@
         }
       },
       {
+        "package": "VEPlaybackSDK",
+        "repositoryURL": "https://github.com/Banuba/VEPlaybackSDK-iOS.git",
+        "state": {
+          "branch": null,
+          "revision": "4353f8d79856210a4422d76ebfdb817a3ff4984a",
+          "version": "1.21.0"
+        }
+      },
+      {
         "package": "VideoEditor",
         "repositoryURL": "https://github.com/Banuba/VideoEditor-iOS.git",
         "state": {
           "branch": null,
-          "revision": "86a338d123a7a0ab0bdcca0b68814ca123b742a4",
+          "revision": "b5c38d644d115ffdb5c8025eba0dbc05260dd76d",
           "version": "1.21.0"
         }
       }
