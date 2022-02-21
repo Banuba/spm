@@ -212,7 +212,7 @@ let package = Package(
       .target(
         name: "VEPlaybackSDKPackage",
         dependencies: [
-          .product(name: "VEPlaybackSDK", package: "VEPlaybackSDK-IOS"),
+          .product(name: "VEPlaybackSDK", package: "VEPlaybackSDK-iOS"),
         ]),
   ]
 )
