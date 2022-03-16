@@ -38,10 +38,6 @@ let package = Package(
         targets: ["BanubaUtilitiesPackage"]),
     
       .library(
-        name: "VEEffectsSDKPackage",
-        targets: ["VEEffectsSDKPackage"]),
-    
-      .library(
         name: "BanubaLicenseServicingSDKPackage",
         targets: ["BanubaLicenseServicingSDKPackage"]),
     
@@ -82,30 +78,28 @@ let package = Package(
         targets: ["VEPlaybackSDKPackage"]),
     
       .library(
-        name: "VEExportSDKPackage",
-        targets: ["VEExportSDKPackage"]),
-    
+        name: "VEEffectsSDKPackage",
+        targets: ["VEEffectsSDKPackage"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/Banuba/VEEffectsSDK-iOS.git", .exact("1.22.0")),
-    .package(url: "https://github.com/Banuba/BanubaOverlayEditorSDK-iOS.git", .exact("1.22.0")),
-    .package(url: "https://github.com/Banuba/BanubaLicenseServicingSDK.git", .exact("1.22.0")),
-    .package(url: "https://github.com/Banuba/BanubaVideoEditorSDK-iOS.git", .exact("1.22.0")),
-    .package(url: "https://github.com/Banuba/BanubaMusicEditorSDK-iOS.git", .exact("1.22.0")),
-    .package(url: "https://github.com/Banuba/BanubaSDKServicing-iOS.git", .exact("1.22.0")),
-    .package(url: "https://github.com/Banuba/BanubaUtilities-iOS.git", .exact("1.22.0")),
-    .package(url: "https://github.com/Banuba/BNBLicenseUtils-iOS.git", .exact("1.22.0")),
-    .package(url: "https://github.com/Banuba/VideoEditor-iOS.git", .exact("1.22.0")),
-    .package(url: "https://github.com/Banuba/BanubaSDK-iOS.git", .exact("1.22.0")),
-    .package(url: "https://github.com/Banuba/BanubaSDKSimple-IOS.git", .exact("1.22.0")),
-    .package(url: "https://github.com/Banuba/BanubaARCloudSDK-IOS.git", .exact("1.22.0")),
-    .package(url: "https://github.com/Banuba/BanubaEffectPlayer-iOS.git", .exact("1.22.0")),
-    .package(url: "https://github.com/Banuba/BanubaAudioBrowserSDK-iOS.git", .exact("1.22.0")),
-    .package(url: "https://github.com/Banuba/BanubaTokenStorageSDK-iOS.git", .exact("1.22.0")),
-    .package(url: "https://github.com/Banuba/BanubaVideoEditorGallerySDK.git", .exact("1.22.0")),
-    .package(url: "https://github.com/Banuba/BanubaVideoEditorTrimSDK-iOS.git", .exact("1.22.0")),
-    .package(url: "https://github.com/Banuba/VEPlaybackSDK-iOS.git", .exact("1.22.0")),
-    .package(url: "https://github.com/Banuba/VEExportSDK-iOS.git", .exact("1.22.0"))
+    .package(url: "https://github.com/Banuba/VEEffectsSDK-iOS.git", .exact("1.21.0")),
+    .package(url: "https://github.com/Banuba/BanubaOverlayEditorSDK-iOS.git", .exact("1.21.0")),
+    .package(url: "https://github.com/Banuba/BanubaLicenseServicingSDK.git", .exact("1.21.0")),
+    .package(url: "https://github.com/Banuba/BanubaVideoEditorSDK-iOS.git", .exact("1.21.0")),
+    .package(url: "https://github.com/Banuba/BanubaMusicEditorSDK-iOS.git", .exact("1.21.0")),
+    .package(url: "https://github.com/Banuba/BanubaSDKServicing-iOS.git", .exact("1.21.0")),
+    .package(url: "https://github.com/Banuba/BanubaUtilities-iOS.git", .exact("1.21.0")),
+    .package(url: "https://github.com/Banuba/BNBLicenseUtils-iOS.git", .exact("1.21.0")),
+    .package(url: "https://github.com/Banuba/VideoEditor-iOS.git", .exact("1.21.0")),
+    .package(url: "https://github.com/Banuba/BanubaSDK-iOS.git", .exact("1.21.0")),
+    .package(url: "https://github.com/Banuba/BanubaSDKSimple-IOS.git", .exact("1.21.0")),
+    .package(url: "https://github.com/Banuba/BanubaARCloudSDK-IOS.git", .exact("1.21.0")),
+    .package(url: "https://github.com/Banuba/BanubaEffectPlayer-iOS.git", .exact("1.21.0")),
+    .package(url: "https://github.com/Banuba/BanubaAudioBrowserSDK-iOS.git", .exact("1.21.0")),
+    .package(url: "https://github.com/Banuba/BanubaTokenStorageSDK-iOS.git", .exact("1.21.0")),
+    .package(url: "https://github.com/Banuba/BanubaVideoEditorGallerySDK.git", .exact("1.21.0")),
+    .package(url: "https://github.com/Banuba/BanubaVideoEditorTrimSDK-iOS.git", .exact("1.21.0")),
+    .package(url: "https://github.com/Banuba/VEPlaybackSDK-iOS.git", .exact("1.21.0")),
   ],
   targets: [
     .target(
@@ -142,12 +136,6 @@ let package = Package(
         name: "BanubaUtilitiesPackage",
         dependencies: [
           .product(name: "BanubaUtilities", package: "BanubaUtilities-iOS"),
-        ]),
-    
-      .target(
-        name: "VEEffectsSDKPackage",
-        dependencies: [
-          .product(name: "VEEffectsSDK", package: "VEEffectsSDK-iOS"),
         ]),
     
       .target(
@@ -221,9 +209,9 @@ let package = Package(
         ]),
     
       .target(
-        name: "VEExportSDKPackage",
+        name: "VEEffectsSDKPackage",
         dependencies: [
-          .product(name: "VEExportSDK", package: "VEExportSDK-iOS"),
+          .product(name: "BanubaVideoEditorEffectsSDK", package: "VEEffectsSDK-iOS"),
         ]),
   ]
 )
