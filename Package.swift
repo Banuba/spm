@@ -80,6 +80,10 @@ let package = Package(
       .library(
         name: "VEEffectsSDKPackage",
         targets: ["VEEffectsSDKPackage"]),
+    
+      .library(
+        name: "VEExportSDKPackage",
+        targets: ["VEExportSDKPackage"]),
   ],
   dependencies: [
     .package(url: "https://github.com/Banuba/BanubaOverlayEditorSDK-iOS.git", .exact("1.22.1")),
@@ -100,6 +104,7 @@ let package = Package(
     .package(url: "https://github.com/Banuba/BanubaVideoEditorTrimSDK-iOS.git", .exact("1.22.1")),
     .package(url: "https://github.com/Banuba/VEPlaybackSDK-iOS.git", .exact("1.22.1")),
     .package(url: "https://github.com/Banuba/VEEffectsSDK-iOS.git", .exact("1.22.1")),
+    .package(url: "https://github.com/Banuba/VEExportSDK-iOS.git", .exact("1.22.1")),
   ],
   targets: [
     .target(
@@ -210,6 +215,12 @@ let package = Package(
     
       .target(
         name: "VEEffectsSDKPackage",
+        dependencies: [
+          .product(name: "VEEffectsSDK", package: "VEEffectsSDK-iOS"),
+        ]),
+    
+      .target(
+        name: "VEExportSDKPackage",
         dependencies: [
           .product(name: "VEEffectsSDK", package: "VEEffectsSDK-iOS"),
         ]),

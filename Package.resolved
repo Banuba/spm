@@ -146,6 +146,15 @@
         }
       },
       {
+        "package": "VEExportSDK",
+        "repositoryURL": "https://github.com/Banuba/VEExportSDK-iOS.git",
+        "state": {
+          "branch": null,
+          "revision": "5ac6a84d5fcb8c8961d8ace8c11678d10b48b223",
+          "version": "1.22.1"
+        }
+      },
+      {
         "package": "VEPlaybackSDK",
         "repositoryURL": "https://github.com/Banuba/VEPlaybackSDK-iOS.git",
         "state": {
