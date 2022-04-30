@@ -222,7 +222,7 @@ let package = Package(
       .target(
         name: "VEExportSDKPackage",
         dependencies: [
-          .product(name: "VEEffectsSDK", package: "VEEffectsSDK-iOS"),
+          .product(name: "VEExportSDK", package: "VEExportSDK-iOS"),
         ]),
   ]
 )
