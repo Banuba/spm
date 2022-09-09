@@ -188,7 +188,7 @@ let package = Package(
       .target(
         name: "BanubaSDKPackage",
         dependencies: [
-          .product(name: "BanubaSdk", package: "BanubaSDK-iOS"),
+          .product(name: "BanubaSDK", package: "BanubaSDK-iOS"),
         ]),
     
       .target(
@@ -204,7 +204,7 @@ let package = Package(
       .target(
         name: "BanubaSDKSimplePackage",
         dependencies: [
-          .product(name: "BanubaSdkSimple", package: "BanubaSDKSimple-IOS"),
+          .product(name: "BanubaSDKSimple", package: "BanubaSDKSimple-IOS"),
         ]),
     
       .target(
