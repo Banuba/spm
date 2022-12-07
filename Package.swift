@@ -3,6 +3,8 @@
 
 import PackageDescription
 
+let sharedVersion: Version = "1.26.1"
+
 let package = Package(
   name: "BanubaVideoEditor",
   platforms: [
@@ -86,25 +88,25 @@ let package = Package(
         targets: ["VEExportSDKPackage"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/Banuba/BanubaOverlayEditorSDK-iOS.git", .exact("1.26.0")),
-    .package(url: "https://github.com/Banuba/BanubaLicenseServicingSDK.git", .exact("1.26.0")),
-    .package(url: "https://github.com/Banuba/BanubaVideoEditorSDK-iOS.git", .exact("1.26.0")),
-    .package(url: "https://github.com/Banuba/BanubaMusicEditorSDK-iOS.git", .exact("1.26.0")),
-    .package(url: "https://github.com/Banuba/BanubaSDKServicing-iOS.git", .exact("1.26.0")),
-    .package(url: "https://github.com/Banuba/BanubaUtilities-iOS.git", .exact("1.26.0")),
-    .package(url: "https://github.com/Banuba/BNBLicenseUtils-iOS.git", .exact("1.26.0")),
-    .package(url: "https://github.com/Banuba/VideoEditor-iOS.git", .exact("1.26.0")),
-    .package(url: "https://github.com/Banuba/BanubaSDK-iOS.git", .exact("1.26.0")),
-    .package(url: "https://github.com/Banuba/BanubaSDKSimple-IOS.git", .exact("1.26.0")),
-    .package(url: "https://github.com/Banuba/BanubaARCloudSDK-IOS.git", .exact("1.26.0")),
-    .package(url: "https://github.com/Banuba/BanubaEffectPlayer-iOS.git", .exact("1.26.0")),
-    .package(url: "https://github.com/Banuba/BanubaAudioBrowserSDK-iOS.git", .exact("1.26.0")),
-    .package(url: "https://github.com/Banuba/BanubaTokenStorageSDK-iOS.git", .exact("1.26.0")),
-    .package(url: "https://github.com/Banuba/BanubaVideoEditorGallerySDK.git", .exact("1.26.0")),
-    .package(url: "https://github.com/Banuba/BanubaVideoEditorTrimSDK-iOS.git", .exact("1.26.0")),
-    .package(url: "https://github.com/Banuba/VEPlaybackSDK-iOS.git", .exact("1.26.0")),
-    .package(url: "https://github.com/Banuba/VEEffectsSDK-iOS.git", .exact("1.26.0")),
-    .package(url: "https://github.com/Banuba/VEExportSDK-iOS.git", .exact("1.26.0")),
+    .package(url: "https://github.com/Banuba/BanubaOverlayEditorSDK-iOS.git", .exact(sharedVersion)),
+    .package(url: "https://github.com/Banuba/BanubaLicenseServicingSDK.git", .exact(sharedVersion)),
+    .package(url: "https://github.com/Banuba/BanubaVideoEditorSDK-iOS.git", .exact(sharedVersion)),
+    .package(url: "https://github.com/Banuba/BanubaMusicEditorSDK-iOS.git", .exact(sharedVersion)),
+    .package(url: "https://github.com/Banuba/BanubaSDKServicing-iOS.git", .exact(sharedVersion)),
+    .package(url: "https://github.com/Banuba/BanubaUtilities-iOS.git", .exact(sharedVersion)),
+    .package(url: "https://github.com/Banuba/BNBLicenseUtils-iOS.git", .exact(sharedVersion)),
+    .package(url: "https://github.com/Banuba/VideoEditor-iOS.git", .exact(sharedVersion)),
+    .package(url: "https://github.com/Banuba/BanubaSDK-iOS.git", .exact(sharedVersion)),
+    .package(url: "https://github.com/Banuba/BanubaSDKSimple-IOS.git", .exact(sharedVersion)),
+    .package(url: "https://github.com/Banuba/BanubaARCloudSDK-IOS.git", .exact(sharedVersion)),
+    .package(url: "https://github.com/Banuba/BanubaEffectPlayer-iOS.git", .exact(sharedVersion)),
+    .package(url: "https://github.com/Banuba/BanubaAudioBrowserSDK-iOS.git", .exact(sharedVersion)),
+    .package(url: "https://github.com/Banuba/BanubaTokenStorageSDK-iOS.git", .exact(sharedVersion)),
+    .package(url: "https://github.com/Banuba/BanubaVideoEditorGallerySDK.git", .exact(sharedVersion)),
+    .package(url: "https://github.com/Banuba/BanubaVideoEditorTrimSDK-iOS.git", .exact(sharedVersion)),
+    .package(url: "https://github.com/Banuba/VEPlaybackSDK-iOS.git", .exact(sharedVersion)),
+    .package(url: "https://github.com/Banuba/VEEffectsSDK-iOS.git", .exact(sharedVersion)),
+    .package(url: "https://github.com/Banuba/VEExportSDK-iOS.git", .exact(sharedVersion)),
   ],
   targets: [
     .target(
