@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let sharedVersion: Version = "1.26.2"
+let sharedVersion: Version = "1.26.3"
 
 let package = Package(
   name: "BanubaVideoEditor",
@@ -42,10 +42,6 @@ let package = Package(
       .library(
         name: "BanubaLicenseServicingSDKPackage",
         targets: ["BanubaLicenseServicingSDKPackage"]),
-    
-      .library(
-        name: "BanubaTokenStorageSDKPackage",
-        targets: ["BanubaTokenStorageSDKPackage"]),
     
       .library(
         name: "BNBLicenseUtilsPackage",
@@ -101,7 +97,6 @@ let package = Package(
     .package(url: "https://github.com/Banuba/BanubaARCloudSDK-IOS.git", .exact(sharedVersion)),
     .package(url: "https://github.com/Banuba/BanubaEffectPlayer-iOS.git", .exact(sharedVersion)),
     .package(url: "https://github.com/Banuba/BanubaAudioBrowserSDK-iOS.git", .exact(sharedVersion)),
-    .package(url: "https://github.com/Banuba/BanubaTokenStorageSDK-iOS.git", .exact(sharedVersion)),
     .package(url: "https://github.com/Banuba/BanubaVideoEditorGallerySDK.git", .exact(sharedVersion)),
     .package(url: "https://github.com/Banuba/BanubaVideoEditorTrimSDK-iOS.git", .exact(sharedVersion)),
     .package(url: "https://github.com/Banuba/VEPlaybackSDK-iOS.git", .exact(sharedVersion)),
@@ -149,12 +144,6 @@ let package = Package(
         name: "BanubaLicenseServicingSDKPackage",
         dependencies: [
           .product(name: "BanubaLicenseServicingSDK", package: "BanubaLicenseServicingSDK"),
-        ]),
-    
-      .target(
-        name: "BanubaTokenStorageSDKPackage",
-        dependencies: [
-          .product(name: "BanubaTokenStorageSDK", package: "BanubaTokenStorageSDK-iOS"),
         ]),
     
       .target(
