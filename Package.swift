@@ -3,12 +3,12 @@
 
 import PackageDescription
 
-let sharedVersion: Version = "1.26.3-alpha"
+let sharedVersion: Version = "1.26.4"
 
 let package = Package(
   name: "BanubaVideoEditor",
   platforms: [
-    .iOS(.v12)
+    .iOS(.v13)
   ],
   products: [
     .library(
