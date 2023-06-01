@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let sharedVersion: Version = "1.26.7"
+let sharedVersion: Version = "1.26.9"
 
 let package = Package(
   name: "BanubaVideoEditor",
@@ -18,10 +18,6 @@ let package = Package(
       .library(
         name: "BanubaVideoEditorSDKPackage",
         targets: ["BanubaVideoEditorSDKPackage"]),
-    
-      .library(
-        name: "BanubaOverlayEditorSDKPackage",
-        targets: ["BanubaOverlayEditorSDKPackage"]),
     
       .library(
         name: "BanubaSDKSimplePackage",
@@ -84,7 +80,6 @@ let package = Package(
         targets: ["VEExportSDKPackage"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/Banuba/BanubaOverlayEditorSDK-iOS.git", .exact(sharedVersion)),
     .package(url: "https://github.com/Banuba/BanubaLicenseServicingSDK.git", .exact(sharedVersion)),
     .package(url: "https://github.com/Banuba/BanubaVideoEditorSDK-iOS.git", .exact(sharedVersion)),
     .package(url: "https://github.com/Banuba/BanubaMusicEditorSDK-iOS.git", .exact(sharedVersion)),
@@ -114,12 +109,6 @@ let package = Package(
         name: "BanubaVideoEditorSDKPackage",
         dependencies: [
           .product(name: "BanubaVideoEditorSDK", package: "BanubaVideoEditorSDK-iOS"),
-        ]),
-    
-      .target(
-        name: "BanubaOverlayEditorSDKPackage",
-        dependencies: [
-          .product(name: "BanubaOverlayEditorSDK", package: "BanubaOverlayEditorSDK-iOS"),
         ]),
     
       .target(
