@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let sharedVersion: Version = "1.26.9"
+let sharedVersion: Version = "1.27.0"
 
 let package = Package(
   name: "BanubaVideoEditor",
@@ -11,10 +11,6 @@ let package = Package(
     .iOS(.v13)
   ],
   products: [
-    .library(
-      name: "BanubaMusicEditorSDKPackage",
-      targets: ["BanubaMusicEditorSDKPackage"]),
-    
       .library(
         name: "BanubaVideoEditorSDKPackage",
         targets: ["BanubaVideoEditorSDKPackage"]),
@@ -64,10 +60,6 @@ let package = Package(
         targets: ["BanubaSDKPackage"]),
     
       .library(
-        name: "BanubaVideoEditorTrimSDKPackage",
-        targets: ["BanubaVideoEditorTrimSDKPackage"]),
-    
-      .library(
         name: "VEPlaybackSDKPackage",
         targets: ["VEPlaybackSDKPackage"]),
     
@@ -82,7 +74,6 @@ let package = Package(
   dependencies: [
     .package(url: "https://github.com/Banuba/BanubaLicenseServicingSDK.git", .exact(sharedVersion)),
     .package(url: "https://github.com/Banuba/BanubaVideoEditorSDK-iOS.git", .exact(sharedVersion)),
-    .package(url: "https://github.com/Banuba/BanubaMusicEditorSDK-iOS.git", .exact(sharedVersion)),
     .package(url: "https://github.com/Banuba/BanubaSDKServicing-iOS.git", .exact(sharedVersion)),
     .package(url: "https://github.com/Banuba/BanubaUtilities-iOS.git", .exact(sharedVersion)),
     .package(url: "https://github.com/Banuba/BNBLicenseUtils-iOS.git", .exact(sharedVersion)),
@@ -93,18 +84,11 @@ let package = Package(
     .package(url: "https://github.com/Banuba/BanubaEffectPlayer-iOS.git", .exact(sharedVersion)),
     .package(url: "https://github.com/Banuba/BanubaAudioBrowserSDK-iOS.git", .exact(sharedVersion)),
     .package(url: "https://github.com/Banuba/BanubaVideoEditorGallerySDK.git", .exact(sharedVersion)),
-    .package(url: "https://github.com/Banuba/BanubaVideoEditorTrimSDK-iOS.git", .exact(sharedVersion)),
     .package(url: "https://github.com/Banuba/VEPlaybackSDK-iOS.git", .exact(sharedVersion)),
     .package(url: "https://github.com/Banuba/VEEffectsSDK-iOS.git", .exact(sharedVersion)),
     .package(url: "https://github.com/Banuba/VEExportSDK-iOS.git", .exact(sharedVersion)),
   ],
   targets: [
-    .target(
-      name: "BanubaMusicEditorSDKPackage",
-      dependencies: [
-        .product(name: "BanubaMusicEditorSDK", package: "BanubaMusicEditorSDK-iOS"),
-      ]),
-    
       .target(
         name: "BanubaVideoEditorSDKPackage",
         dependencies: [
@@ -171,15 +155,9 @@ let package = Package(
           .product(name: "BanubaSdk", package: "BanubaSDK-iOS"),
         ]),
     
-      .target(
-        name: "BanubaVideoEditorTrimSDKPackage",
-        dependencies: [
-          .product(name: "BanubaVideoEditorTrimSDK", package: "BanubaVideoEditorTrimSDK-iOS"),
-        ]),
-    
       .testTarget(
         name: "spmTests",
-        dependencies: ["BanubaMusicEditorSDKPackage"]),
+        dependencies: []),
     
       .target(
         name: "BanubaSDKSimplePackage",
