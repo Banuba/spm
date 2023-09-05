@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let sharedVersion: Version = "1.29.2"
+let sharedVersion: Version = "1.30.0"
 
 let package = Package(
   name: "BanubaVideoEditor",
